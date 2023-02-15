@@ -10,7 +10,7 @@ plugins {
 
 ext {
   // https://search.maven.org/artifact/org.apache.kafka/kafka-streams
-  kafkaVersion = '2.7.0'
+  kafkaVersion = '3.4.0'
 }
 
 application {
@@ -57,7 +57,7 @@ task runFirst(type: JavaExec) {
   classpath = sourceSets.main.runtimeClasspath 
   systemProperties = [
     'host': 'localhost',
-    'port': '7000',
+    'port': '7070',
     'stateDir': '/tmp/kafka-streams'
   ]
 }
